@@ -1,0 +1,42 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+    background-color: #f9fafb;
+    display: flex;
+}
+img, picture, video, canvas, svg {
+  display: block;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+img{
+    height: 100vh;
+    width: auto;
+    position: absolute; 
+}
+div{
+    color: antiquewhite;
+    font-size: 120px;
+    height: fit-content;
+}
+#overlay_text{
+    position: relative; 
+    top: 350px; 
+    width:940px;
+    background-color: black;
+    opacity: .7;
+    text-align: center;
+}
