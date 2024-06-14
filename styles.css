@@ -1,42 +1,86 @@
-
 *, *::before, *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 * {
-  margin: 0;
+	margin: 0;
 }
 body {
-  line-height: 1.5;
-    background-color: #f9fafb;
-    display: flex;
+	line-height: 1.5;
+	background-color: #f9fafb;
+	display: flex;
 }
 img, picture, video, canvas, svg {
-  display: block;
+	display: block;
 }
 input, button, textarea, select {
-  font: inherit;
+	font: inherit;
 }
 p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
 #root, #__next {
-  isolation: isolate;
+	isolation: isolate;
 }
 img{
-    height: 100vh;
-    width: auto;
-    position: absolute; 
-}
-div{
-    color: antiquewhite;
-    font-size: 120px;
-    height: fit-content;
+	height: 100vh;
+	width: auto;
+	position: absolute;
 }
 #overlay_text{
-    position: relative; 
-    top: 350px; 
-    width:940px;
-    background-color: black;
-    opacity: .7;
-    text-align: center;
+	font-size: 120px;
+	height: fit-content;
+	color: antiquewhite;
+	position: relative;
+	top: 350px;
+	width:940px;
+	background-color: black;
+	opacity: .7;
+	text-align: center;
 }
+#form_div{
+	margin-top: 550px;
+	height: 400px;
+	width: 100%;
+	background-color: white;
+	box-shadow: 2px 0px 5px;
+}
+#head{
+	font-size: 50px;
+	margin-left: 50px;
+}
+form{
+	margin-bottom: 10px;
+}
+fieldset{
+	border: none;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	gap: 20px;
+}
+fieldset > div{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+label{
+	display: block;
+	font-size: 15px;
+}
+input{
+	width: 100%;
+	height: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+input:focus{
+	border: 1.5px solid aqua;
+	outline: none;
+	box-shadow: 2px 2px 12px 2px rgba(0, 0, 255, 0.1);
+}
+input:invalid{
+	border-color: red;
+	box-shadow: 2px 2px 2px 8px rgba(250, 0, 0, 0.02);
+} 
